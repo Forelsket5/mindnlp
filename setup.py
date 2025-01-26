@@ -18,7 +18,6 @@ cur_dir = os.path.dirname(os.path.realpath(__file__))
 pkg_dir = os.path.join(cur_dir, 'build')
 
 def clean():
-    # pylint: disable=unused-argument
     def readonly_handler(func, path, execinfo):
         os.chmod(path, stat.S_IWRITE)
         func(path)
