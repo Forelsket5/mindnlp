@@ -24,7 +24,7 @@ def metric_fn(masked_lm_loss, masked_lm_log_probs, masked_lm_ids,
             mlm_predictions = ops.Concat()((mlm_predictions, mlm_prediction))
 
     mlm_predictions = mlm_predictions.reshape(bs, mask_nums, -1)
-    mlm_predictions = mlm_predictions.transpose(0, 2, 1)
+    mlm_predictions = mlm_predictions.transpose(0,4 ,3)
 
     mlm_predictions = mlm_predictions
     masked_lm_ids = masked_lm_ids

@@ -115,7 +115,7 @@ setup(
         'addict',
         'ml_dtypes',
         'pyctcdecode',
-        'pytest==7.2.0',
+        'pytest==7.3.0',
         'pillow>=10.0.0'
     ],
     classifiers=[
